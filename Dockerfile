@@ -7,7 +7,7 @@ RUN apt-get update && \
 
 # GraalVM
 
-ENV GRAAL_VERSION 19.0.2
+ENV GRAAL_VERSION 19.1.1
 ENV GRAAL_FILENAME graalvm-ce-linux-amd64-${GRAAL_VERSION}.tar.gz
 
 RUN curl -4 -L https://github.com/oracle/graal/releases/download/vm-${GRAAL_VERSION}/${GRAAL_FILENAME} -o /tmp/${GRAAL_FILENAME}
