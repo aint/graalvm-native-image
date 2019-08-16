@@ -7,8 +7,8 @@ RUN apt-get update && \
 
 # GraalVM
 
-ENV GRAAL_VERSION 1.0.0-rc7
-ENV GRAAL_FILENAME graalvm-ce-${GRAAL_VERSION}-linux-amd64.tar.gz
+ENV GRAAL_VERSION 19.0.2
+ENV GRAAL_FILENAME graalvm-ce-linux-amd64-${GRAAL_VERSION}.tar.gz
 
 RUN curl -4 -L https://github.com/oracle/graal/releases/download/vm-${GRAAL_VERSION}/${GRAAL_FILENAME} -o /tmp/${GRAAL_FILENAME}
 
@@ -21,4 +21,3 @@ VOLUME /project
 WORKDIR /project
 
 ENTRYPOINT ["/usr/lib/graalvm/bin/native-image"]
-
