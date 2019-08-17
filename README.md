@@ -1,15 +1,15 @@
-[![](https://images.microbadger.com/badges/image/tenshi/graalvm-native-image.svg)](https://microbadger.com/images/tenshi/graalvm-native-image "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/tenshi/graalvm-native-image.svg)](https://microbadger.com/images/tenshi/graalvm-native-image "Get your own version badge on microbadger.com")
-![Docker Pulls](https://img.shields.io/docker/pulls/tenshi/graalvm-native-image.svg?style=popout)
+[![](https://images.microbadger.com/badges/image/aint/graalvm-native-image.svg)](https://microbadger.com/images/aint/graalvm-native-image)
+[![](https://images.microbadger.com/badges/version/aint/graalvm-native-image.svg)](https://microbadger.com/images/aint/graalvm-native-image)
+![Docker Pulls](https://img.shields.io/docker/pulls/aint/graalvm-native-image.svg?style=popout)
 
 ### GraalVM CE native-image as a docker container
 
-https://hub.docker.com/r/tenshi/graalvm-native-image/
+https://hub.docker.com/r/aint/graalvm-native-image/
 
 Provides a handy way to build native images for arbitrary JVM projects. Here is an example:
 
 ```bash
-docker run -it -v $(pwd):/project --rm tenshi/graalvm-native-image \
+docker run -it -v $(pwd):/project --rm aint/graalvm-native-image \
   --verbose \
   -cp $CLASSPATH \
   -H:Name=app \
