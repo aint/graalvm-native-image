@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER Oleg Ilyenko
+MAINTAINER Oleksandr Tyshkovets
 
 RUN apt-get update && \
     apt-get -y install gcc libc6-dev zlib1g-dev curl bash && \
