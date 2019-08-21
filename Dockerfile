@@ -1,5 +1,6 @@
 FROM ubuntu
-MAINTAINER Oleksandr Tyshkovets
+
+LABEL maintainer="olexandr.tyshkovets@gmail.com"
 
 RUN apt-get update && \
     apt-get -y install gcc libc6-dev zlib1g-dev curl bash && \
