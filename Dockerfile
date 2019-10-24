@@ -2,7 +2,7 @@ FROM ubuntu
 
 LABEL maintainer="olexandr.tyshkovets@gmail.com"
 
-ENV GRAAL_VERSION 19.2.0
+ENV GRAAL_VERSION 19.2.1
 ENV GRAAL_FILENAME graalvm-ce-linux-amd64-${GRAAL_VERSION}.tar.gz
 
 RUN apt-get update \
